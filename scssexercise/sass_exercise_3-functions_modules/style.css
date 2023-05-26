@@ -3,10 +3,12 @@ body {
 }
 
 div h1 {
+  display: flex;
+  justify-content: center;
   color: green;
   text-decoration: underline;
-  text-decoration-color: blue;
-  text-align: center;
+  -webkit-text-decoration-color: blue;
+          text-decoration-color: blue;
 }
 div .firstSection {
   display: flex;
@@ -40,5 +42,6 @@ div .secondSection article p {
   justify-content: center;
   color: green;
   border-color: blue;
-  font-size: 20px;
-}/*# sourceMappingURL=style.css.map */
+  font-size: calc(24px / 14px) rem;
+}
+/*# sourceMappingURL=style.css.map */
