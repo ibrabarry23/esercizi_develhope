@@ -3,7 +3,6 @@ body {
 }
 
 div h1 {
-  display: flex;
   justify-content: center;
   color: green;
   text-decoration: underline;
