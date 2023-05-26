@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  nav {
+    display: flex;
+    background: rebeccapurple;
+    padding:  1rem;
+    justify-content: space-between;
+  }
+  main {
+  
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+  }
+  .np{
+    display: flex;
+    gap: 1rem;
+  }
+  h1{
+    text-transform: uppercase;
+  }
+
+  .rectangle{
+    height: 20px;
+    width: 230px ;
+    background-color: antiquewhite;
+ 
+  }
+
+.rectangled{
+  display: flex;
+  gap:1rem;
+}
+  .rectangle1{
+    height: 20px;
+    width: 50px ;
+    background-color: red;
+    
+  }
+  .rectangle2{
+    height: 20px;
+    width: 50px ;
+    background-color: black; 
+  }
+  .quadrato{
+    height: 20px;
+    width: 20px ;
+    background-color: bisque;
+    display: none;
+  }
+
+  
+  .contenitore{
+    position: relative;
+    display: flex;
+    margin-top: 10rem;
+    justify-content: center;
+    flex-direction:column;
+  }
+  .rettangle_body{
+    position: relative;
+    justify-content: center;
+    background: red;
+    height: 30px;
+    width: 300px;
+  }
+.boxc{
+  display: flex;
+  justify-content: center;
+}
+  .box{
+    margin-top:1rem ;
+    height: 200px;
+    width: 550px;
+    background-color: black;
+  }
+
+  .due{
+    height: 100px;
+    width: 100px;
+    background-color: bisque;
+
+  }
+  .recbody{
+    display: flex;
+    justify-content: center;
+  }
+  .square{
+    margin-top: 1rem;
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+    flex-direction: row;
+    
+  }
+
+  @media screen and (max-width: 1280px) {
+    .rectangle {
+        display: none;
+    }
+    .quadrato{
+      display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  .rectangle {
+      display: none;
+  }
+  .quadrato{
+    display: block;
+  }
+  .rectangle1, .rectangle2{
+    display: none;
+  }
+}

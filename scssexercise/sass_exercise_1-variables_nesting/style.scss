@@ -2,14 +2,10 @@ $first-color:red;
 $second-color:blue;
 $third-color:green;
 
-body{
-    border:1px solid $first-color;
-}
-
-
-
 
 div{
+    border:1px solid $first-color;
+
     section{
         display: flex;
         padding: 8px;
@@ -17,16 +13,18 @@ div{
             border: 1px solid $third-color;
             text-align: center;
             justify-content: space-between;
+
             padding: inherit;
             font-size: 20px;
         }
-        article:nth-child(1), article:nth-child(3){
+        article:nth-child(even), article:nth-child(3){
             color: $second-color;
         }
        
-        article:nth-child(2),article:nth-child(4){
+        article:nth-child(odd),article:nth-child(4){
             color: $first-color;
         }
+        
     }
   
 

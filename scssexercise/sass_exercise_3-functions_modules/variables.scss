@@ -1,0 +1,10 @@
+$first-color: red;
+$second-color: blue;
+$third-color: green;
+$size-body: 1rem;
+$size-footer: 20px;
+
+@function size_conversion_px_to_rem ($size_in_px) {
+    $rem-font-size: 16px; 
+    @return calc($size-in-px / $rem-font-size)rem;
+}

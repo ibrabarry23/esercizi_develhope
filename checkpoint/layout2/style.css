@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+.container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+    width: 80%;
+}
+aside{
+    height: 100%;
+    width: 20%;
+    background: blueviolet;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap:1rem;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    background: burlywood;
+    padding: 10px;
+}

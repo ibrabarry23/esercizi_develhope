@@ -1,7 +1,6 @@
-body {
+div {
   border: 1px solid red;
 }
-
 div section {
   display: flex;
   padding: 8px;
@@ -13,17 +12,15 @@ div section article {
   padding: inherit;
   font-size: 20px;
 }
-div section article:nth-child(1), div section article:nth-child(3) {
+div section article:nth-child(even), div section article:nth-child(3) {
   color: blue;
 }
-div section article:nth-child(2), div section article:nth-child(4) {
+div section article:nth-child(odd), div section article:nth-child(4) {
   color: red;
 }
 div h1 {
   color: green;
   text-decoration: underline;
-  -webkit-text-decoration-color: blue;
-          text-decoration-color: blue;
+  text-decoration-color: blue;
   text-align: center;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

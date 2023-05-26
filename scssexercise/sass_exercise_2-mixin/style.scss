@@ -1,0 +1,58 @@
+$first-color: red;
+$second-color: blue;
+$third-color: green;
+$size-body: 1rem;
+$size-footer: 24px;
+
+@mixin article-style($color, $border-color, $font-size) {
+  color: $color;
+  border-color: $border-color;
+  font-size: $font-size;
+}
+
+body {
+  border: 1px $first-color solid;
+}
+div{
+    h1{
+        color: $third-color;
+        text-decoration: underline;
+        text-decoration-color:$second-color ;
+        text-align: center;
+    }
+    .firstSection {
+        display: flex;
+        padding: 10px;
+    
+        article {
+          border: 1px solid $third-color;
+          justify-content: space-evenly;
+          padding: inherit;
+    
+          &:nth-child(odd) {
+            @include article-style($second-color, $third-color, $size-body)
+          }
+    
+          &:nth-child(even) {
+            @include article-style($first-color, $third-color, $size-body)
+
+          }
+        }
+      }
+      .secondSection{
+        display: flex;
+        padding: 10px;
+    
+        article {
+          border: 1px solid $second-color;
+          flex: 1;
+    
+          p {
+            display: flex;
+            justify-content: center;
+            @include article-style($third-color, $second-color, $size-footer)
+
+          }
+        }
+      }
+}
