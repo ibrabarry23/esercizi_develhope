@@ -4,18 +4,28 @@
   border-color: $border-color;
   font-size: $font-size;
 }
-
 body {
   border: 1px solid v.$first-color;
 }
+%text {
+  display: flex;
+  justify-content: center;
+  color: v.$third-color;
+  text-decoration: underline;
+  text-decoration-color: v.$second-color;
+}
 div {
   h1 {
-    display: flex;
-    justify-content: center;
-    color: v.$third-color;
-    text-decoration: underline;
-    text-decoration-color: v.$second-color;
+    @extend %text;
   }
+  h2 {
+    @extend %text;
+    @extend body;
+    margin-left: 35%;
+    padding: 0.8rem;
+    width: 30%;
+  }
+
   .firstSection {
     display: flex;
     padding: 10px;
@@ -40,11 +50,7 @@ div {
       p {
         display: flex;
         justify-content: center;
-        @include article-style(
-          v.$third-color,
-          v.$second-color,
-          v.size_conversion_px_to_rem(v.$size-footer)
-        );
+        @include article-style(v.$third-color,v.$second-color,v.size_conversion_px_to_rem(v.$size-footer));
       }
     }
   }
