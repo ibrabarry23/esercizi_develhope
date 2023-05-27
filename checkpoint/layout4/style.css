@@ -72,4 +72,14 @@ main{
         width: 50px;
         background: white;
     }
+    .box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-color: gainsboro;
+    margin-top:0%;
+    padding: 5rem;
+    width: 100%;
+    margin-left: 0%;   
+}
 }

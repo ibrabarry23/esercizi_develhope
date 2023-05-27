@@ -1,0 +1,83 @@
+@use "variabels" as v;
+@mixin article-style($color, $border-color, $font-size) {
+  color: $color;
+  border-color: $border-color;
+  font-size: $font-size;
+}
+body {
+  border: 1px solid v.$first-color;
+}
+%text {
+  display: flex;
+  justify-content: center;
+  color: v.$third-color;
+  text-decoration: underline;
+  text-decoration-color: v.$second-color;
+}
+div {
+  h1 {
+    @extend %text;
+  }
+  h2 {
+    @extend %text;
+    @extend body;
+    margin-left: 35%;
+    padding: 0.8rem;
+    width: 30%;
+  }
+
+  .firstSection {
+    display: flex;
+    padding: 10px;
+    article {
+      border: 1px solid v.$third-color;
+      justify-content: space-evenly;
+      padding: inherit;
+      &:nth-child(odd) {
+        @include article-style(v.$second-color, v.$third-color, v.$size-body);
+      }
+      &:nth-child(even) {
+        @include article-style(v.$first-color, v.$third-color, v.$size-body);
+      }
+    }
+  }
+  .secondSection {
+    
+    display: flex;
+    justify-content: space-around;
+    @for $i from 1 through 3 {
+        .fs-#{$i}rem {
+            font-size: #{$i}rem;
+        }
+
+    }
+    div {
+        @for $l from 1 through 20 {
+            &:nth-child(#{$l}) {
+                background-color: darken(v.$base-background-color, $l * 5);
+                color: lighten(v.$text-color, $l * 5);
+            @if $l == 10 {
+                background-color: v.$second-color;
+                color: v.$first-color;
+            }
+            }
+        }
+        border: 1px  solid v.$first-color;
+        height: 45px;
+        width: 45px;
+    }
+}
+.thirdSection {
+    display: flex;
+    padding: 10px;
+    article {
+      border: 1px solid v.$second-color;
+      flex: 1;
+      p {
+        display: flex;
+        justify-content: center;
+        @include article-style(v.$third-color,v.$second-color,v.size_conversion_px_to_rem(v.$size-footer));
+      }
+    }
+  }
+}

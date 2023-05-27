@@ -42,6 +42,6 @@ div .secondSection article p {
   justify-content: center;
   color: green;
   border-color: blue;
-  font-size: calc(24px / 14px) rem;
+  font-size: calc(24px / 14px)rem;
 }
 /*# sourceMappingURL=style.css.map */

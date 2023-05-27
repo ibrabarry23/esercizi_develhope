@@ -1,1 +1,153 @@
+body, div h2 {
+  border: 1px solid red;
+}
+
+div h2, div h1 {
+  display: flex;
+  justify-content: center;
+  color: green;
+  text-decoration: underline;
+  -webkit-text-decoration-color: blue;
+          text-decoration-color: blue;
+}
+
+div h2 {
+  margin-left: 35%;
+  padding: 0.8rem;
+  width: 30%;
+}
+div .firstSection {
+  display: flex;
+  padding: 10px;
+}
+div .firstSection article {
+  border: 1px solid green;
+  justify-content: space-evenly;
+  padding: inherit;
+}
+div .firstSection article:nth-child(odd) {
+  color: blue;
+  border-color: green;
+  font-size: 1rem;
+}
+div .firstSection article:nth-child(even) {
+  color: red;
+  border-color: green;
+  font-size: 1rem;
+}
+div .secondSection {
+  display: flex;
+  justify-content: space-around;
+}
+div .secondSection .fs-1rem {
+  font-size: 1rem;
+}
+div .secondSection .fs-2rem {
+  font-size: 2rem;
+}
+div .secondSection .fs-3rem {
+  font-size: 3rem;
+}
+div .secondSection div {
+  border: 1px solid red;
+  height: 45px;
+  width: 45px;
+}
+div .secondSection div:nth-child(1) {
+  background-color: #f2f2f2;
+  color: #0d0d0d;
+}
+div .secondSection div:nth-child(2) {
+  background-color: #e6e6e6;
+  color: #1a1a1a;
+}
+div .secondSection div:nth-child(3) {
+  background-color: #d9d9d9;
+  color: #262626;
+}
+div .secondSection div:nth-child(4) {
+  background-color: #cccccc;
+  color: #333333;
+}
+div .secondSection div:nth-child(5) {
+  background-color: #bfbfbf;
+  color: #404040;
+}
+div .secondSection div:nth-child(6) {
+  background-color: #b3b3b3;
+  color: #4d4d4d;
+}
+div .secondSection div:nth-child(7) {
+  background-color: #a6a6a6;
+  color: #595959;
+}
+div .secondSection div:nth-child(8) {
+  background-color: #999999;
+  color: #666666;
+}
+div .secondSection div:nth-child(9) {
+  background-color: #8c8c8c;
+  color: #737373;
+}
+div .secondSection div:nth-child(10) {
+  background-color: gray;
+  color: gray;
+  background-color: blue;
+  color: red;
+}
+div .secondSection div:nth-child(11) {
+  background-color: #737373;
+  color: #8c8c8c;
+}
+div .secondSection div:nth-child(12) {
+  background-color: #666666;
+  color: #999999;
+}
+div .secondSection div:nth-child(13) {
+  background-color: #595959;
+  color: #a6a6a6;
+}
+div .secondSection div:nth-child(14) {
+  background-color: #4d4d4d;
+  color: #b3b3b3;
+}
+div .secondSection div:nth-child(15) {
+  background-color: #404040;
+  color: #bfbfbf;
+}
+div .secondSection div:nth-child(16) {
+  background-color: #333333;
+  color: #cccccc;
+}
+div .secondSection div:nth-child(17) {
+  background-color: #262626;
+  color: #d9d9d9;
+}
+div .secondSection div:nth-child(18) {
+  background-color: #1a1a1a;
+  color: #e6e6e6;
+}
+div .secondSection div:nth-child(19) {
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+}
+div .secondSection div:nth-child(20) {
+  background-color: black;
+  color: white;
+}
+div .thirdSection {
+  display: flex;
+  padding: 10px;
+}
+div .thirdSection article {
+  border: 1px solid blue;
+  flex: 1;
+}
+div .thirdSection article p {
+  display: flex;
+  justify-content: center;
+  color: green;
+  border-color: blue;
+  font-size: calc(24px / 14px)rem;
+}
 /*# sourceMappingURL=style.css.map */
