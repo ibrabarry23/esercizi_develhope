@@ -54,7 +54,7 @@ div {
     div {
         @for $l from 1 through 20 {
             &:nth-child(#{$l}) {
-                background-color: darken(v.$base-background-color, $l * 5);
+                background-color: darken(v.$background-color, $l * 5);
                 color: lighten(v.$text-color, $l * 5);
             @if $l == 10 {
                 background-color: v.$second-color;

@@ -5,7 +5,7 @@ $size-body: 1rem;
 $size-footer: 24px;
 $box-height: 45px;
 $box-width: 45px;
-$base-background-color: #fff;
+$background-color: #fff;
 $text-color: #000;
 
 @function size_conversion_px_to_rem ($size_in_px) {
