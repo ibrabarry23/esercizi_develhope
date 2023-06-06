@@ -1,3 +1,5 @@
-function multiplyByTwo(value) {
-  let number = 2;
+const order = {};
+
+if (!order?.customer?.adress?.city) {
+  console.log('City is required');
 }

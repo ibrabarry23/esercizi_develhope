@@ -1,11 +1,7 @@
-# Closures
+# Array Methods Advanced
 
-Write a new `closure`: create a function called `multiplyByTwo` that takes in one parameter.
-Inside the `multiplyByTwo` function, create a function called `inner`. This function will take care of multiplying the parameter passed as input and multiply it by the variable named `number`
-Print in the console the function output.
+Create a function called `uncompletedNotes` that returns only not completed todos.
 
-Example: `multiplyByTwo(4)()`, result: `8`
+**Suggestion**
 
-Tips:
-
-- You can learn more about this topic checking this article: https://www.freecodecamp.org/news/closures-in-javascript/
+Use the forEach and filter arrays methods.

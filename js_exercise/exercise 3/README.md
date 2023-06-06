@@ -1,3 +1,3 @@
-# Conditionals & Loops
+# Arrow functions
 
-Create the function `nicknameMap` using the for loop, which takes in an array of people and returns a `nicknames` array. The nickname must be composed as follows: `<name>-<age>`.
+Turn the variables functions into arrow functions and combine the functions so that the result of the following mathematical operation is printed on the console: `((2 + 4) * (5 + 2) - 2) / 5`

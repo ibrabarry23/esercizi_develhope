@@ -1,3 +1,11 @@
 # Conditionals & Loops
 
-Create the function `nicknameMap` using the for loop, which takes in an array of people and returns a `nicknames` array. The nickname must be composed as follows: `<name>-<age>`.
+Create a function `sumUntil` that takes in a parameter and retunrs the sum of all numbers ranging from one to the value passed as parameter.
+
+Example:
+
+function sumUntil(maxValue) {
+// ...
+}
+
+console.log(sumUntil(5)); // OUTPUT: 15
