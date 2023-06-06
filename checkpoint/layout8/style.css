@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ body {
+    height: 100vh;
+    overflow: hidden;
+  }
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+main{
+    width: 80%;
+   height: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: rebeccapurple;
+    align-items: center;
+}
+aside{
+    height: 100%;
+    width: 20%;
+    background-color: aliceblue;
+}
+.logo{
+    margin: 2rem ;
+    display: flex;
+    justify-content: center;
+
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.squares-aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .square-aside {
+    margin-top: 3rem;
+    width: 150px;
+    height: 80px;
+    background-color: rebeccapurple;
+    margin-bottom: 1rem; 
+  }
+  
+.squares-main {
+    display: flex;
+    align-items: center;  
+    margin-left: 22%;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+  
+  .square-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 120px;
+    width: 120px;
+    background-color: rebeccapurple;
+    margin-top: 1rem;  
+  }
+  .input{
+    display: flex;
+    margin-left: 3rem;
+  }
+  .circle{
+  
+    height: 30px;
+    width: 30px;
+    background-color: aliceblue;
+    border-radius: 50%;
+  }
+  
+  .rectangele-main{
+    gap: 1rem;
+    height: 100px;
+    width: 120px;
+    background-color: red;
+    margin-top: 6.5rem;  
+  }
+footer{
+    display:none ;
+}
+  @media screen and (max-width:600px) {
+    aside{
+        display: none;
+    }
+    main{
+        width: 100%;
+    }
+    footer {
+        display: flex;
+        justify-content: start;
+        background-color: rebeccapurple;
+        margin-top: 1rem;
+      }
+      .squares-footer{
+        display: flex;
+        align-items: center;
+        margin-right: 50%;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+      .square-footer {
+        display: flex;
+        width: 50px;
+        background-color: black;
+        height: 50px;
+      }
+      
+    
+     
+    .input{
+        display: none;
+     }
+     .squares-main{
+        margin-left: 2%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .square-main{
+        width: 60%;
+    }
+    .rectangele-main{
+        width: 100%;
+    }
+    
+  }
+  @media screen and (max-width:1000px) {
+    aside  h2{
+       display: none;
+    }
+    .logo{
+        margin-left: 35%;
+        height: 50px;
+        width: 50px;
+        background-color: rebeccapurple;
+    }
+    .square-aside {
+        margin-top: 3rem;
+        width: 150px;
+        height: 80px;
+        background-color: rebeccapurple;
+        margin-bottom: 1rem; 
+      }
+  }

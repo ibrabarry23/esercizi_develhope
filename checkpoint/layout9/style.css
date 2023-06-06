@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+main{
+    width: 100%;
+    height: 100%;
+
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: rebeccapurple;
+    padding: 1rem;
+}
+.sec1{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.rectangle-nav1{
+    height: 10px;
+    width: 100px;
+    background-color: white;
+}
+.sec2{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.rectangle-nav2{
+    height: 20px;
+    width: 50px;
+    background-color: white;
+}
+
+.rectangele1{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+.rectangle-main1{
+    height: 20px;
+    width: 350px;
+    background-color: black;
+}
+
+.rectangel2{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.rectangle-main2{
+    height: 20px;
+    width: 250px;
+    background-color: black;
+}
+.main-box{
+    display: flex;
+    justify-content:center;
+}
+
+.box-left{
+    margin-top: 1rem;
+    width: 380px;
+    height: 350px;
+    background-color: lightgray;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+
+}
+.box-right{
+    margin-top: 1rem;
+    width: 380px;
+    height: 350px;
+    background-color: gray;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+}
+.sqaures{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.square{
+    margin-top: 1rem;
+    height: 120px;
+    width: 160px;
+    background-color: black;
+}
+.rectangle-sqaure{
+    margin-top: 8rem;
+    width:100% ;
+    height: 20px;
+    background-color: red;
+}
+.rectangle-nav3{
+    display: none;
+    height: 20px;
+    width: 20px;
+    background-color: aliceblue;
+}
+@media screen and (max-width:600px){
+    .box-right{
+        display: none;
+    }
+    .main-box{
+        display: flex;
+        flex-direction: column;
+    }
+   
+
+    .rectangle-nav2{
+        display: none;
+    }
+    .box-left{
+        height: 600px;
+        margin-left: 2rem;
+        
+    }
+    .square{
+        height: 90px;
+        width: 300px;
+    }
+    .sqaures{
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 5rem;
+       gap:2rem;
+    }
+    .rectangle-sqaure{
+        margin-top: 6rem;
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    .box-right{
+        display: none;
+    }
+    .box-left{
+        margin-top: 1rem;
+        width: 480px;
+        background-color: lightgray;
+        border-radius: 1rem;
+        
+    
+    }
+    .rectangle-nav3{
+        display: flex;
+    }
+    .rectangle-nav1{
+        display: none;
+    }
+}

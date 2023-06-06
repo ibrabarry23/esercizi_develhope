@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+header{
+    background-color: rebeccapurple;
+    padding: 1rem;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h2{
+    color: white;
+}
+
+.container{
+    display: flex;
+    height: 100%
+}
+aside {
+    background-color: lightblue;
+    padding: 1rem;
+    min-width: 200px;
+}
+.circle{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50%;
+}
+.username{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.user-image{
+    display: flex;
+    justify-content: center;
+}
+.nicname-user{
+    display: flex;
+    justify-content: center;
+}
+.items{
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 3rem;
+    font-size: 1.5rem;
+}
+main{
+    display: flex;
+    justify-content: center;
+    margin-left: 3%;
+    margin-top: 5%;
+}
+
+.sqaures{
+    padding: 1rem;
+    gap: 2rem;
+    flex: 1;
+    display: flex;
+}
+.square{
+    height: 200px;
+    width: 200px;
+    background-color: rebeccapurple
+}
