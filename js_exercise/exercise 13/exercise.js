@@ -1,6 +1,6 @@
 function calculateAverageAge(persons) {
   return Math.round(
-    persons.map((person)=> person.age).reduce((prev,next)=>prev+next)/persons.length
+    persons.map((x)=> x.age).reduce((prev,next)=>prev+next)/persons.length
   );
 }
 
