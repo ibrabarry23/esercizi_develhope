@@ -6,6 +6,8 @@ const person = {
 
 let values = Object.keys(person);
 
-  values.forEach((value)=>{
-    console.log(`${value}:{person[value] }`)
-  })
+for(let i = 0; i<values.length; i++){
+  let value = values[i];
+  console.log(`${value}: ${person[value]}`);
+
+}
