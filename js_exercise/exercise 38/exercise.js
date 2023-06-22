@@ -28,11 +28,3 @@ myPromise
     .catch((error) => console.log(error))
 
 
-   const matrice = [
-    [1,2,3],
-    [1,4,7],
-    [1,9,3]
-
-   ]
-
-   console
