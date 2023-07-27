@@ -1,4 +1,3 @@
-import { useState } from "react"
 import DisplayCounter from "./DisplayCounter";
 
 function Counter ({valoreIniziale, intervallo, incremento}){
@@ -15,5 +14,3 @@ function Counter ({valoreIniziale, intervallo, incremento}){
     
       return <DisplayCounter count={count} />
 }
-
-export default Counter
