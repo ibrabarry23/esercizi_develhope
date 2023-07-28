@@ -1,13 +1,8 @@
-
-import Login from "./Components/Login";
-function App(){
-  const handelLogin = (data)=>{
-    console.log("login eseguito",data)
-  }
-  return(
-    <>
-    <Login login={handleLoginClick}/>
-    </>
+import InterctiveWelcome from "./Components/InteractiveWelcome"
+function App() {
+  return (
+   <InterctiveWelcome/>
   )
 }
+
 export default App
