@@ -11,6 +11,7 @@ function Todo () {
 
     const addItem= ()=>{
         val !=="" && setTodo([...todo,val]);
+        setVal("")
         
     };
 
