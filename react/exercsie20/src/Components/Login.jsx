@@ -16,10 +16,7 @@ function Login({ onLog }) {
   };
   const isDisabled = username === "" || password === "";
   
-  const resset =()=>{
-    setUsername("");
-    setPassword("");
-  }
+  
 
   return (
     <>

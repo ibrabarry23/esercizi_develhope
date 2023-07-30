@@ -13,7 +13,7 @@ function UncotrolledLogin () {
         <>
         <form onSubmit={handleLog}>
             <label>Username</label>
-            <input type="text" name="username"  />
+            <input type="text" name="username" defaultValue={"sium"} autoFocus />
 
             <label>Password</label>
             <input type="password" name="password"  />
