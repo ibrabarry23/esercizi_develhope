@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Reset from "./reset";
 function Login({ onLog }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -16,7 +17,10 @@ function Login({ onLog }) {
   };
   const isDisabled = username === "" || password === "";
   
-  
+  const resetInput = () => {
+    setUsername("");
+    setPassword("");
+  };
 
   return (
     <>
@@ -29,7 +33,7 @@ function Login({ onLog }) {
       <button onClick={loginClick} disabled={isDisabled}>
         Login
       </button>
-      <button onClick={resset}>Reset</button>
+      <Reset onReset={resetInput}/>
     </>
   );
 }
