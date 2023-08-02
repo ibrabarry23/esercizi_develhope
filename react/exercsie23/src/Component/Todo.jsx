@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import Reset from "./Reset";
 function Todo () {
 
     const [todo, setTodo] = useState ([]);
@@ -13,6 +13,11 @@ function Todo () {
         val !=="" && setTodo([...todo,val]);
         
     };
+    
+    const handleReset = () => {
+        setTodo([]);
+        setVal("");
+      };
 
     return (
         <>
@@ -26,6 +31,7 @@ function Todo () {
         <form >
             <input type="text" value={val} onChange={changeValue} />
             <button type="button" onClick={addItem}>add</button>
+            <Reset onReset={handleReset} />
         </form>
         </>
     )
