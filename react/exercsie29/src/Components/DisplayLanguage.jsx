@@ -3,7 +3,11 @@ import { LanguageContext } from "./LanguageContext";
 
 function DisplayLanguage() {
   const language = useContext(LanguageContext);
+    const condition = ()=>{
+      if(condition == ""){
 
+      }
+    }
   return (
     <>
       <LanguageContext.Consumer>
