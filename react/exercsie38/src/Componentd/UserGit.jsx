@@ -1,4 +1,4 @@
-import { userGitHub } from "./utils";
+import { userGitHub } from "../utils";
 function UserGit({ username }) {
     const data = userGitHub(username)
     console.log(data)

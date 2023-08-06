@@ -1,4 +1,4 @@
-import UserGit from "./UserGit"
+import UserGit from "./Componentd/UserGit"
 function App() {
   return <UserGit username="ibrabarry23" />
 
