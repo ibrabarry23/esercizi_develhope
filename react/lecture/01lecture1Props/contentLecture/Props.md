@@ -84,3 +84,18 @@ function ChildCompnent({name,age}){
  }
  export default ChildCompnent
 ```
+
+--- 
+
+## Esercizi 
+### Esercizio 1
+Crea un'applicazione React che mostri le informazioni di un utente. Crea due componenti: UserCard (componente genitore) e UserInfo (componente figlio). Passa le seguenti props dal componente genitore al componente figlio:
+
+- name: Nome dell'utente.
+- age: Età dell'utente.
+- email: Indirizzo email dell'utente.
+
+---
+ ## Esercizi 
+### Esercizio 2
+Crea un'applicazione React che visualizzi una lista di articoli. Crea due componenti: ArticleList (componente genitore) e Article (componente figlio). Passa un array di oggetti articolo come prop dal componente genitore al componente figlio. Ogni oggetto articolo dovrebbe avere almeno un titolo e un contenuto. Nel componente figlio, itera attraverso l'array e visualizza il titolo e il contenuto di ciascun articolo.
