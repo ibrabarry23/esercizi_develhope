@@ -8,4 +8,5 @@ function Article ({title,content}) {
     )
 }
 
+
 export default Article

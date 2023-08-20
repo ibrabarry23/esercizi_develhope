@@ -1,13 +1,14 @@
 ---
 marp: true
 size: 4:3
+class: invert
+
 ---
 
 <style>
   section {
    
     font-family: "Computer Modern", sans-serif;
-    color: black;
 
   }
   h1,h6 {
@@ -15,7 +16,6 @@ size: 4:3
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
 
   }
 </style>
@@ -48,3 +48,37 @@ const [value, setValue] = useState(initialValue)
 - initialValue è il valore inziale dello stato.
 
 ---
+
+## Esempio 
+```jsx
+import React, {useState}  from 'react'
+function Counter (){
+
+  const [count , setCount]= useState(0)
+  const incremento = () => setCount(count+1);
+  const decremento = () => setCount(count+1);
+  
+  return(
+    <>
+    <h1>Counter</h1>
+    <button onClick={incremento}>Incremento:</button>
+    <button onClick={decremento}>Decremento:</button>
+    </>
+  )
+
+}
+export default Counter
+```
+---
+## Esempio 
+```jsx
+import Counter from "./counter"
+
+function App(){
+  return (
+    <Counter/>
+  )
+}
+
+export default App
+```
