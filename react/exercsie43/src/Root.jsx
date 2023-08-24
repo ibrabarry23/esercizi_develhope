@@ -1,10 +1,11 @@
-import { BrowserRouter } from "react-router-dom"
-import { App } from "./App.js"
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import App from "./App"; 
 
 export function Root() {
-    return (
-        <BrowserRouter>
-            <App />
-        </BrowserRouter>
-    )
+  return (
+    <Routes>
+      <Route path="/*" element={<App />} />
+    </Routes>
+  );
 }
