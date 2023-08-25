@@ -1,13 +1,5 @@
-import UserGit from "./Component/UserGit"
-import GitList from "./Component/GitList"
-function App() {
-  return(
-    <>
-    <UserGit username="ibrabarry23" />
-    <GitList/>
-    </>
-    ) 
+import GithubUser from "./Component/GithubUser";
 
+export default function App() {
+    return <GithubUser login="ibrabarry23" />;
 }
-
-export default App

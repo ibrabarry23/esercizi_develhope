@@ -7,7 +7,7 @@ export default function Counter({ i = 0 }) {
   const navigate = useNavigate();
 
   function handleButtonNavigate() {
-    navigate('/');
+    navigate('/Counter');
   }
 
   return (

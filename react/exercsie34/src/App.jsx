@@ -1,7 +1,7 @@
 import UserGitHub from "./Component/UserGitHub"
 
 function App() {
-  return <UserGitHub username="ibrabarry23" />;
+  return <UserGitHub login="ibrabarry23" />;
 }
 
 export default App;
