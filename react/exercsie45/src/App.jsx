@@ -7,7 +7,7 @@ import Home from "./Home";
 export default function App() {
     return (
         <Router>
-            <div>
+            <>
                 <h1>Welcome to my application!</h1>
                
 
@@ -17,7 +17,7 @@ export default function App() {
                     <Route path="/users/:username" element={<ShowGithubUser login= "ibrabbarry23"/>} />
                     
                 </Routes>
-            </div>
+            </>
         </Router>
     );
 }

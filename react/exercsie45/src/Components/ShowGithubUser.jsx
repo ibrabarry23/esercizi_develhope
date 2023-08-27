@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function GithubUser({ login }) {
     const [data, setData]= useState([]);
     const [error, setError] = useState(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         async function fetchData() {
@@ -24,11 +26,17 @@ export default function GithubUser({ login }) {
     if (error) {
         return <p>Error: {error}</p>;
     }
+    function handleButtonNavigate() {
+        navigate('/');
+      }
+    
 
     return (
         <>
             <p>Name: {data.login}</p>
             <p>Bio: {data.bio}</p>
+            <button onClick={handleButtonNavigate}>Homepage</button>
+
         </>
     );
 }

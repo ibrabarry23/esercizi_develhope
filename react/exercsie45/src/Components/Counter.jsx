@@ -11,12 +11,12 @@ export default function Counter({ i  }) {
   }
 
   return (
-    <div>
+    <>
       <h1>Count: {count}</h1>
       <button onClick={onIncrement}>Increment</button>
       <button onClick={onDecrement}>Decrement</button>
       <button onClick={onReset}>Reset</button>
       <button onClick={handleButtonNavigate}>Homepage</button>
-    </div>
+    </>
   );
 }
