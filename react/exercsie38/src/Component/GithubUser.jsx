@@ -1,4 +1,3 @@
-import React from "react";
 import useGithubUser from "./UserGitHub";
 
 export default function GithubUser({ login }) {
@@ -13,8 +12,8 @@ export default function GithubUser({ login }) {
     }
 
     return (
-        <div>
+        <>
             <h1>{data.login}</h1>
-        </div>
+        </>
     );
 }
