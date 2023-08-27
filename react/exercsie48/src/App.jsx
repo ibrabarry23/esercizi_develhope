@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Counter from "./Components/Counter";
 import ShowGithubUser from "./Components/ShowGithubUser";
 import Home from "./Home";
+import { GitList } from "./Components/GitList";
 
 export default function App() {
     return (
@@ -14,7 +15,7 @@ export default function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/counter" element={<Counter i={1} />} />
                     <Route path="/users/:username" element={<ShowGithubUser login= "ibrabbarry23"/>} />
-                    <Route path="*" element={<><h1>Not Found!</h1></>} />
+                    <Route path="/github-users" element={<GitList />} />
                     
                 </Routes>
             </>
