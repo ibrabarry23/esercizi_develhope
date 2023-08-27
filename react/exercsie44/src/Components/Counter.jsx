@@ -2,12 +2,12 @@ import React from "react";
 import { useCounter } from "./UseCounter";
 import { useNavigate } from "react-router-dom";
 
-export default function Counter({ i = 0 }) {
-  const { count, onIncrement, onDecrement, onReset } = useCounter(i);
+export default function Counter({ i  }) {
+  const { count, onIncrement, onDecrement, onReset } = useCounter(i=0);
   const navigate = useNavigate();
 
   function handleButtonNavigate() {
-    navigate('/Counter');
+    navigate('/');
   }
 
   return (
