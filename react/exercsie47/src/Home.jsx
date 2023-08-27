@@ -15,8 +15,9 @@ export default function Home() {
                 <button>Go to ShowGithubUser</button>
             </Link>
             
-            <Link to="/unknown">
-                <button>Go to Unknown Path</button>
+            
+            <Link to="/gitlist">
+                <button>Go to GitList</button>
             </Link>
             </>
         );
