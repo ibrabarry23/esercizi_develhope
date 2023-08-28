@@ -1,11 +1,13 @@
-import useSWR from "swr";
+import useSWR, { mutate } from "swr";
 import fetcher from "./Fetcher";
+
 export default function useGithubUser(login) {
     if (login === null) {
         return {
             user: null,
             isLoading: false,
-            isError: false
+            isError: false,
+            refetch: () => {}   
         };
     }
 
@@ -15,6 +17,9 @@ export default function useGithubUser(login) {
     return {
         user: data,
         isLoading: !error && !data,
-        isError: error
+        isError: error,
+        refetch: () => {
+            mutate(url);
+        }
     };
 }

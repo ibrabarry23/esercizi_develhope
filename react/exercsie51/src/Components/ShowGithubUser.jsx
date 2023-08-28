@@ -3,15 +3,20 @@ import useGithubUser from "./useGithubUser";
 import { useParams } from "react-router-dom";
 
 export default function ShowGithubUser() {
-    const { username } = useParams(); 
-    const { user, isLoading, isError } = useGithubUser(username);
+    const { username } = useParams();
+    const { user, isLoading, isError, refetch } = useGithubUser(username);
 
     if (isLoading) {
         return <p>Loading...</p>;
     }
 
     if (isError) {
-        return <p>Error fetching data for user: {username}</p>;
+        return (
+            <div>
+                <p>Error fetching data for user: {username}</p>
+                <button onClick={refetch}>Retry</button>
+            </div>
+        );
     }
 
     return (

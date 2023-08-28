@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function GithubUser({ login }) {
-    const [data, setData]= useState([]);
+    const [data, setData]= useState({});
     const [error, setError] = useState(null);
     const navigate = useNavigate();
 
