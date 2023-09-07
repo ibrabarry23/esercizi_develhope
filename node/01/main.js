@@ -1,4 +1,4 @@
-crypto = require("crypto");
+const crypto = require("crypto");
 
 let id = crypto.randomUUID();
 

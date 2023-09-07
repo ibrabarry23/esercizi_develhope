@@ -1,0 +1,4 @@
+Dato un array di numeri interi e un target intero, restituisci gli indici dei due numeri in modo tale che la somma dia il target. Puoi presumere che ogni input abbia esattamente una soluzione e non puoi utilizzare lo stesso elemento due volte.
+ Puoi restituire la risposta in qualsiasi ordine.
+  Esempio 1: Ingresso: numeri = [2,7,11,15], obiettivo = 9 Uscita: [0,1] Spiegazione: poiché nums[0] + nums[1] == 9, restituiamo [0, 1]. 
+  Esempio 2: Ingresso: numeri = [3,2,4], obiettivo = 6 Uscita: [1,2] Esempio 3: Ingresso: numeri = [3,3], obiettivo = 6 Uscita: [0,1] Vincoli: 2 <= num.lunghezza <= 104 -109 <= numeri[i] <= 109 -109 <= obiettivo <= 109 Esiste una sola risposta valida.
