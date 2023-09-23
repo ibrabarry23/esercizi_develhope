@@ -11,19 +11,17 @@ function luckyDraw(player) {
       });
     });
   }
-  const  checkDraw = async () =>{
-    try {
-        const tinaResult = await luckyDraw("Tina")
-        console.log(tinaResult)
-
-        const jorgeResult = await luckyDraw("Jorge")
-        console.log(jorgeResult)
-
-        const julienResult = await luckyDraw ("Julien")
-        console.log(julienResult)
-
-    } catch (error) {
-        console.log(error.message)
+ 
+  const players = ["Joe", "Caroline", "Sabrina"];
+  
+  const checkGame = async () => {
+  try {
+    for (const element of players) {
+      const res = await luckyDraw(element);
+      console.log(res)
     }
-}
-checkDraw()  
+  } catch (err) {
+    console.log('error')
+  }
+  }
+  checkGame()
