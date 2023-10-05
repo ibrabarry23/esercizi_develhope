@@ -20,7 +20,7 @@ const planetSchema = Joi.object({
 });
 
 app.get('/', (req, res) => {
-  res.send('Benvenuto alla tua API sui pianeti!');
+  res.send('Benvenuto nella homepage');
 })
 app.get('/api/planets', (req, res) => res.json(planets));
 
