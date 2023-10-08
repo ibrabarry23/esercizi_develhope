@@ -99,7 +99,7 @@ app.post('/api/planets', create);
 app.put('/api/planets/:id', updateById);
 app.delete('/api/planets/:id', deleteById);
 
-app.post("/api/planets/id:/image", createImage)
+// app.post("/api/planets/id:/image", createImage)
 
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);

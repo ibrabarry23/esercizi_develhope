@@ -4,16 +4,11 @@ const { getAll, getOneById, create, updateById, deleteById } = require('./contro
 
 const app = express();
 
-app.use((req, res, next) => {
-  res.setHeader('Content-Security-Policy', "script-src 'self' 'unsafe-inline';");
-  next();
-});
 
 app.use(json());
 
 const PORT = 3000;
 
-// Utilizza percorsi univoci per le route nel file planetsController.js
 app.get('/api/planets-controller', getAll);
 app.get('/api/planets-controller/:id', getOneById);
 app.post('/api/planets-controller', create);
