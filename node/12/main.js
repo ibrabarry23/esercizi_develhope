@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var express_1 = require("express");
-var planets_1 = require("../controllers/planets");
+var planets_1 = require("./controllers/planets");
 var app = (0, express_1.default)();
 app.use(function (req, res, next) {
     res.setHeader('Content-Security-Policy', "script-src 'self' 'unsafe-inline';");

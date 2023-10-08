@@ -1,5 +1,6 @@
-import express, { Application, Request, Response } from 'express';
-import { getAll, getOneById, create, updateById, deleteById } from '../controllers/planets';
+import * as express from 'express';
+import { Application, Request, Response } from 'express';
+import { getAll, getOneById, create, updateById, deleteById } from './controllers/planets';
 
 const app: Application = express();
 
