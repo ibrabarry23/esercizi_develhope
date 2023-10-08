@@ -5,6 +5,19 @@ const multer = require('multer')
 const app = express();
 const PORT = 3000;
 
+const storage = multer.diskStorage({
+
+    destination:(req,file,cb) =>{
+        cb(null, "./uploads")
+    },
+
+    filename:(req,file,cb) =>{
+         cb(null, file.originalname)
+    },
+
+})
+const upload = multer({storage});
+
 app.use(express.json());
 const db = pgPromise()("postgres://postgres:postgres@localhost:5432/postgres");
 
@@ -92,14 +105,10 @@ const deleteById = async (req, res) => {
         res.status(500).json({ msg: 'Internal Server Error' });
     }
 };
-
-app.get('/api/planets', getAll);
-app.get('/api/planets/:id', getOneById);
-app.post('/api/planets', create);
-app.put('/api/planets/:id', updateById);
-app.delete('/api/planets/:id', deleteById);
-
-// app.post("/api/planets/id:/image", createImage)
+const createImage = async(req,res) =>{
+    console.log(req.file)
+    res.status(200).json({msg:"The image uploas sucessfuly "})
+}
 
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);
